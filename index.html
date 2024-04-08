@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Unit Converter</h2>
+
+  <!-- Length Converter -->
+  <div class="converter">
+    <h3>Length Converter</h3>
+    <input type="number" id="lengthInputValue" placeholder="Enter value">
+    <select id="lengthFromUnit">
+      <option value="meter">Meter (m)</option>
+      <option value="kilometer">Kilometer (km)</option>
+      <option value="centimeter">Centimeter (cm)</option>
+    </select>
+    <span>to</span>
+    <select id="lengthToUnit">
+      <option value="meter">Meter (m)</option>
+      <option value="kilometer">Kilometer (km)</option>
+      <option value="centimeter">Centimeter (cm)</option>
+    </select>
+    <button onclick="convert('length')">Convert</button>
+    <div id="lengthResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <!-- Weight Converter -->
+  <div class="converter">
+    <h3>Weight Converter</h3>
+    <input type="number" id="weightInputValue" placeholder="Enter value">
+    <select id="weightFromUnit">
+      <option value="gram">Gram (g)</option>
+      <option value="kilogram">Kilogram (kg)</option>
+      <option value="pound">Pound (lb)</option>
+    </select>
+    <span>to</span>
+    <select id="weightToUnit">
+      <option value="gram">Gram (g)</option>
+      <option value="kilogram">Kilogram (kg)</option>
+      <option value="pound">Pound (lb)</option>
+    </select>
+    <button onclick="convert('weight')">Convert</button>
+    <div id="weightResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <!-- Time Converter -->
+  <div class="converter">
+    <h3>Time Converter</h3>
+    <input type="number" id="timeInputValue" placeholder="Enter value">
+    <select id="timeFromUnit">
+      <option value="second">Second (s)</option>
+      <option value="minute">Minute (min)</option>
+      <option value="hour">Hour (hr)</option>
+    </select>
+    <span>to</span>
+    <select id="timeToUnit">
+      <option value="second">Second (s)</option>
+      <option value="minute">Minute (min)</option>
+      <option value="hour">Hour (hr)</option>
+    </select>
+    <button onclick="convert('time')">Convert</button>
+    <div id="timeResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <!-- Area Converter -->
+  <div class="converter">
+    <h3>Area Converter</h3>
+    <input type="number" id="areaInputValue" placeholder="Enter value">
+    <select id="areaFromUnit">
+      <option value="squaremeter">Square Meter (m²)</option>
+      <option value="hectare">Hectare (ha)</option>
+      <option value="squarefoot">Square Foot (ft²)</option>
+    </select>
+    <span>to</span>
+    <select id="areaToUnit">
+      <option value="squaremeter">Square Meter (m²)</option>
+      <option value="hectare">Hectare (ha)</option>
+      <option value="squarefoot">Square Foot (ft²)</option>
+    </select>
+    <button onclick="convert('area')">Convert</button>
+    <div id="areaResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <!-- Volume Converter -->
+  <div class="converter">
+    <h3>Volume Converter</h3>
+    <input type="number" id="volumeInputValue" placeholder="Enter value">
+    <select id="volumeFromUnit">
+      <option value="cubicmeter">Cubic Meter (m³)</option>
+      <option value="liter">Liter (L)</option>
+      <option value="gallon">Gallon (gal)</option>
+    </select>
+    <span>to</span>
+    <select id="volumeToUnit">
+      <option value="cubicmeter">Cubic Meter (m³)</option>
+      <option value="liter">Liter (L)</option>
+      <option value="gallon">Gallon (gal)</option>
+    </select>
+    <button onclick="convert('volume')">Convert</button>
+    <div id="volumeResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <!-- Temperature Converter -->
+  <div class="converter">
+    <h3>Temperature Converter</h3>
+    <input type="number" id="tempInputValue" placeholder="Enter value">
+    <select id="tempFromUnit">
+      <option value="celsius">Celsius (°C)</option>
+      <option value="fahrenheit">Fahrenheit (°F)</option>
+      <option value="kelvin">Kelvin (K)</option>
+    </select>
+    <span>to</span>
+    <select id="tempToUnit">
+      <option value="celsius">Celsius (°C)</option>
+      <option value="fahrenheit">Fahrenheit (°F)</option>
+      <option value="kelvin">Kelvin (K)</option>
+    </select>
+    <button onclick="convert('temperature')">Convert</button>
+    <div id="tempResult" class="result"></div> <!-- Placeholder for result -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
